@@ -1,0 +1,28 @@
+{
+  "name": "Cangjie Query",
+  "description" : "倉頡字根查詢; 感謝《Follow Me倉頡字典》線上查詢版 - 中文輸入法世界倉頡, 提供字根查詢" ,
+  "version": "1.0",
+  "manifest_version": 2,
+  "permissions": ["contextMenus"],
+  "commands": {
+    "_execute_browser_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+F",
+        "mac": "MacCtrl+Shift+F"
+      },
+      "description": "Opens popup.html"
+    }
+  },
+  /*"browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": "cangjie.png",
+    "default_title": "Chanjie query"
+  },*/
+  "icons": {
+    "256": "images/main_icon.png"
+  },
+  "web_accessible_resources": [ "images/main-icon.png" ],
+  /* "default_popup": "popup.html", */
+  "background": {"scripts": ["contextMenu.js"]}
+  /*"background": {"page": "popup.html"}*/
+}
